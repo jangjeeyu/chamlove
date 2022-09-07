@@ -124,10 +124,10 @@
 
 /* 수정작업 */
 /* --------메인 슬라이드 버튼------------ */
-.slick-dots{position: absolute; top: 56%; left: 10%;
+.lazy .slick-dots{position: absolute; bottom: 30%; left: 8%;
                 display: flex; flex-wrap: nowrap; flex-direction: row;} 
-.slick-dots li{margin-right: 10px;}
-.slick-dots li button{display: block; width: 8px;
+.lazy .slick-dots li{margin-right: 10px;}
+.lazy .slick-dots li button{display: block; width: 8px;
                              height: 8px; background-color: #fff; border: none; border-radius: 50%; font-size: 0;}
 .slick-dots li.slick-active button{background-color:#E84E0F; width: 40px; border-radius: 10px; transition: 0.5s;}
 
@@ -136,6 +136,6 @@
 .center button{border: none; font-size: 0;}
 
 /* 식단안내 서비스 슬라이드 버튼 */
-.regular .slick-dots{display: none;}
+
 .regular .slick-prev{position: absolute; left: -7%; bottom: 50%;}
 .regular .slick-next{position: absolute; right: -7%; bottom: 50%;}

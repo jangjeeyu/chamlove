@@ -5,14 +5,17 @@ $(function(){
         infinite: true,
         centerMode: true,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed: 1500,
+        pauseOnHover : true,
       });
 })
 
 //식단안내 슬릭
 $(function(){
-  $(".regular").slick({
-    dots: true,
+  $(".today_meal .regular").slick({
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1
