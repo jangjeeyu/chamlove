@@ -49,27 +49,31 @@ h3{font-weight: 700; font-size: 32px;}
 
 
 /* ------main-------- */
-#main{position: relative; box-sizing: border-box; margin-bottom: 150px;}
-#main img{width: 100%; }
-#main .main_text{position: absolute; top: 35%; left: 21.5%;}
-#main .main_text h2{padding-bottom: 30px; line-height: 55px; font-size: 38px;
-                    color: #fff;}
+#main{position: relative; box-sizing: border-box; }
+#main img{width: 100%;}
+#main .main_text{position: absolute; top: 50%; left: 21.5%; transform: translateY(-50%);}
+#main .main_text h2{padding-bottom: 30px; line-height: 50px; font-size: 38px;
+                    color: #fff; transition: 0.8s;}
 #main .main_text p{font-size: 18px; color: #fff; line-height: 30px; 
-                    padding-bottom: 30px; }
+                    padding-bottom: 30px; transition: 0.8s;}
 
 /*--------------------quick ------------------------*/
-.quick_menu{background-color: #fff; border: 1px solid #E84E0F;
-                border-bottom: none; border-radius: 30px 30px 00px 0px;
+.quick_menu{background-color: #fff; 
+                border-bottom: none; border-radius: 10px 10px 00px 0px;
             width: 600px; height: 40px; position: absolute;
-            padding: 13px 99px; bottom: 0;left: 50%; transform:translateX(-50%); z-index: 2;}
-.quick_menu .quick_tit p{padding-top:12%; font-size: 24px; 
+            padding: 13px 99px; bottom: 3px;left: 50%; transform:translateX(-50%); z-index: 2;}
+.quick_menu .quick_tit p{padding-top:8%; font-size: 24px; 
                         font-weight: 300;}
 .quick_menu .menu_min a .sec2_min{align-items: center; justify-content: center; margin-right:50px; 
-                                 margin-top: 18%;}
+                                 margin-top: 10%;}
 .quick_menu .menu_min a .sec2_min:hover{background-color: #E84E0F;} 
 /* .quick_menu .menu_min a:nth-child(3) .sec2_min{margin-right: 0px;} */
 /* .quick_menu .menu_min a .sec2_min img{width: 58px; height: 58px;} */
 .quick_menu .menu_min a .sec2_min p{font-size: 17px; color: #555;}
+
+/* banner */
+.banner{margin-top: -3px; margin-bottom: 200px;}
+.banner img{width: 100%;}
 
 /* --------vision------ */
 #sec3_vis{margin-bottom: 200px;}
@@ -91,14 +95,16 @@ h3{font-weight: 700; font-size: 32px;}
 
 /* --------------------------program-양한방-------------------------- */
 .rehb_medi {position: relative; justify-content: inherit; margin-bottom: 200px;}
-.rehb_medi .left{width: 60%;}
-.rehb_medi .left > img{width:100%;}
-.rehb_medi .right{margin-left: 60px; width: 40%;}
+.rehb_medi .box .slider-for{width: 60%;}
+.rehb_medi .box .slider-for > div img{width: 100%;}
+.rehb_medi .box .slider-nav{width: 60%;}
 .rehb_medi .right #right_eng{font-size: 38px; opacity: 20%; line-height: 100px;}
 
-/* width: 36.6%; height: 21.5%; */
+/* width: 36.6%; height: 21.5%; 
+*/
 
-.rehb_page{width: 45%; height: 67%; box-shadow: #555; border-radius: 30px;
+.rehb_page{width: 100%; height: 100%; box-shadow: #555; 
+           border-radius: 30px;
            position: absolute; bottom: 5%; right: 0; background-color: #fff; box-shadow: 4px 2px 6px rgb(177, 177, 177); overflow: hidden;}
            
 .rehb_page > div {padding:40px 0 0 60px; line-height: 30px;}
@@ -179,15 +185,48 @@ h3{font-weight: 700; font-size: 32px;}
 .custom li:hover, .notice li:hover{color: #E84E0F; font-weight: 700;}
 .notice li .notice_date{font-size: 16px; font-weight: 200; color: #555;}
 
-/* ----------------식단안내------------------------------------------------ */
-#sec10_meal{margin-bottom: 200px;}
+/* ----------------식단안내------------------- */
+#sec10_meal{margin-bottom: 100px;}
 .meal_notice{text-align: center; background-color:#dbecc8; padding: 40px 0; line-height: 50px; margin-bottom: 74px;}
 .meal_notice .meal_tit{font-size: 38px;}
-#sec10_meal .today_meal img{width: 485px; border-radius: 20px;}
 
-/* ---------------------푸터------------------------------------------------ */
-footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100;}
-.foot .foot_top{padding-top: 40px; padding-bottom: 20px;}
-.foot .foot_top_text a{padding-right: 120px;  font-size: 18px; position: relative;}
-.foot .foot_top_text a::after{content: ''; width: 1px; height: 0.6rem; background-color: #fff;
-                                         position: absolute; top: 5px; right: 55px;}
+#sec10_meal .today_meal img{width: 100%;}
+
+/* 지도 */
+#sec11_map{margin-bottom: 00px;}
+
+/* ---------------------푸터------------------- */
+footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100; padding: 20px 0;}
+
+.foot .foot_top{padding-bottom: 10px; border-bottom: 1px solid #a2bb88; position: relative; margin-bottom: 10px;}
+.foot .foot_top_text a{padding-right: 120px;  font-size: 18px; position: relative; left: 2%;}
+.foot .foot_top_text a:hover{font-weight: 500;}
+.foot .foot_top_text a::after{content: ''; width: 1px; height: 0.6rem; 
+                                        background-color: #fff; position: absolute; top: 5px; right: 55px;}
+.foot .foot_top_icon{position: absolute; right: 2%; top: 20%; 
+                                transform: translateY(-50%);}
+.foot .foot_top_icon img{width: 36px; height: 36px; padding: 0 3px;}
+.foot .foot_top_icon p:nth-child(4){padding-right:20px;}
+.foot .foot_top_icon button{border: 1px solid #a2bb88; padding: 0 10px;}
+
+.foot .foot_bottom .bot1{margin-left: 1%;}
+.foot .foot_bottom .bot2{margin-top: 20px; margin-left: -400px;} 
+.foot .foot_bottom .bot3{margin-right: 1.5% ; margin-top: 1%;}
+.foot .foot_bottom .bot3 .number{font-weight: 700; font-size: 50px;}
+.foot .foot_bottom .bot3_txt{padding-top: 20px;}
+
+
+
+
+/* 1024px */
+@media all and (max-width:1024px){
+        #main .main_text h2{padding-bottom: 20px; line-height: 40px; 
+                                        font-size: 30px; transition: 0.8s;}
+        #main .main_text p{font-size: 14px; line-height: 20px; 
+                                        padding-bottom: 30px; transition: 0.8s;}
+        .lazy .slick-dots li button{width: 5px; height: 5px; transition: 0.8s;}
+        .slick-dots li.slick-active button{width: 30px;}
+}
+
+/* 768px */
+@media all and (max-width:768px){}

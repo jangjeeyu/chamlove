@@ -26,7 +26,7 @@
         
             <div class="flex inner1">
                 <h1 id="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="images/logo.png">
                     </a>
                 </h1>
@@ -35,7 +35,7 @@
                         <li>
                             <a href="#">병원소개</a>
                             <ul class="depth2">
-                              <li><a href="#">인사말</a></li>
+                              <li><a href="sub.html">인사말</a></li>
                               <li><a href="#">참사랑소개</a></li>
                               <li><a href="#">오시는 길</a></li>
                               <li><a href="#">입원/퇴원</a></li>
@@ -87,7 +87,7 @@
         <section class="lazy slider" data-sizes="50vw">
           <div>
           <div class="slider_img">
-            <img src="images/main.jpg" alt="할머니와 여자가 마주보고 웃는 이미지">
+            <img src="images/main1.png" alt="할머니와 여자가 마주보고 웃는 이미지">
           </div> <!--slider img-->
           <div class="main_text">
             <h2><span class="orange">사랑</span>과 <span class="orange">정성</span>을 다하는 병원<br>참사랑 요양병원</h2>
@@ -97,7 +97,7 @@
 
         <div>
         <div class="slide_img">
-          <img src="images/main.jpg" alt="할머니와 여자가 마주보고 웃는 이미지">
+          <img src="images/main2.png" alt="할머니와 여자가 마주보고 웃는 이미지">
         
         <!-- <div class="main_text">
           <h2><span class="orange">사랑</span>과 <span class="apricot">정성</span>을 다하는 병원<br>참사랑 요양병원</h2>
@@ -134,6 +134,11 @@
         </div> <!--퀵메뉴 영역-->
     </section>
 
+    <div class="banner">
+      <img src="images/banner1.png">
+      <img src="images/banner2.png">
+    </div>
+
     <section id="sec3_vis">
       <div class="inner1">
         <div class="vis_tit">
@@ -168,30 +173,52 @@
     </section>
 
     <section id="sec4_prog1" class="inner1">
-      <div class="rehb_medi flex">
-        <div class="left"><img src="images/rehab.jpg"></div>
-        <div class="right">
-          <div>
+      <div class="rehb_medi">
+
+        <section class="box flex">
+          <article class="slider-for slider">
+            <div><img src="images/rehab.jpg"></div>
+            <div><img src="images/exercise.jpg"></div>
+            <!-- <div class="left"><img src="images/rehab.jpg"></div> -->
+          </article>
+
+          <!-- <div>
             <p id="right_eng" class="green medium">Rehabilitation medicine</p>
             <h2>양한방 <span class="thin">프로그램</span></h2>
-          </div>
-          <div class="rehb_page">
-            <div>
-            <h2>01<span>/02</span></h2>
-            <h3 class="green medium">한방내과</h3>
-            <p>중풍, 위장질환, 장질환, 불안, 우울, 불면, 두통, 상열감,<br>
-            가슴 답답함 등을 전통 한방 요법을 통해 해결</p>
-            <h6>치료효과 · 효능</h6>
-            <span class="span1">
-              <img src="images/effect1.png" alt="스트레칭 아이콘">
-            </span>
-            <span class="span1">
-              <img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
-           </div>
-          </div> <!--rehb absolute page-->
-        </div> <!--right-->
+          </div> -->
+
+          
+          <article class="slider-nav slider">
+              <div>
+                <div class="rehb_page">
+                <h2>01<span>/02</span></h2>
+                <h3 class="green medium">한방내과</h3>
+                <p>중풍, 위장질환, 장질환, 불안, 우울, 불면, 두통, 상열감,<br>
+                가슴 답답함 등을 전통 한방 요법을 통해 해결</p>
+                <h6>치료효과 · 효능</h6>
+                <span class="span1">
+                  <img src="images/effect1.png" alt="스트레칭 아이콘">
+                </span>
+                <span class="span1">
+                  <img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
+               </div>
+
+               <div  class="rehb_page">
+                <h2>02<span>/02</span></h2>
+                <h3 class="green medium">한방 재활 의학과</h3>
+                <p>마비치료분야, 통증치료분야, 노인치료분야</p>
+                <h6>치료효과 · 효능</h6>
+                <span class="span1">
+                  <img src="images/effect1.png" alt="스트레칭 아이콘">
+                </span>
+                <span class="span1">
+                  <img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
+               </div> <!--rehb absolute page-->
+              </div>
+            </article>
+          </section>
       </div> <!--rehb medi-->
-    </section>
+    
 
     <section id="sec5_prog2">
       <p></p><!--뒤쪽 주황 배경 들어갈 부분-->
@@ -358,7 +385,7 @@
       </div>
       <div class="today_meal inner1">
         <!-- 슬릭 슬라이드 넣을 곳 -->
-      <article class="regular slider">
+      <article class="meal_slider">
         <div>
           <img src="images/meal1.jpg" alt="한식반상">
         </div>
@@ -379,7 +406,9 @@
     </section>
 
     <section id="sec11_map">
-      <div></div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4610.6670747356275!2d129.08544191287837!3d35.200641034478345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35689372056e6c37%3A0x54cc39b0bcec8417!2z67aA7IKw6rSR7Jet7IucIOuPmeuemOq1rCDsiJjrr7zrj5kg7Lap66Cs64yA66GcIDI1OA!5e0!3m2!1sko!2skr!4v1614739889515!5m2!1sko!2skr" width="100%" height="295" frameborder="0" allowfullscreen=""></iframe>
+      </div>
     </section>
 
     <footer>
@@ -391,10 +420,26 @@
             <a href="#">오시는 길</a>
           </div> <!--foot top text-->
           <div class="foot_top_icon flex">
-            <p class="foot_icon"><img src="" alt="페이스북 로고"></p>
-            <p class="foot_icon"><img src="" alt="인스타그램 로고"></p>
-            <p class="foot_icon"><img src="" alt="네이버해피빈 로고"></p>
-            <p class="foot_icon"><img src="" alt="카카오톡 로고"></p>
+            <p class="foot_icon">
+              <a href="#">
+                <img src="images/sns1.png" alt="페이스북 로고">
+              </a>
+            </p>
+            <p class="foot_icon">
+              <a href="#">
+                <img src="images/sns2.png" alt="인스타그램 로고">
+              </a>
+            </p>
+            <p class="foot_icon">
+              <a href="#">
+                <img src="images/sns3.png" alt="해피빈 로고">
+              </a>
+            </p>
+            <p class="foot_icon">
+              <a href="#">
+                <img src="images/sns3.png" alt="해피빈 로고">
+              </a>
+            </p>
             <button>Family Site</button>
           </div> <!--foot top icon--> 
         </div> <!--foot_top-->
@@ -413,11 +458,9 @@
           </div>
           <div class="bot3">
             <p class="number">051) - 553 - 0050</p> 
-            <p>평일</p>
-            <p>토요일</p>
-            <p>일/공휴일 휴진</p>
-            <p>입원예약 수시접수</p>
-            <p>구급차 항시대기</p>
+            <div class="bot3_txt">
+            <p>월, 금 9시~18시 / 화, 수, 목 9시~17시 / 토 9시~12시</p>
+            <p>일·공휴일 휴진 / 입원예약 수시접수 / 구급차 항시대기</p>
           </div>
         </div>
       </div> <!--foot-->

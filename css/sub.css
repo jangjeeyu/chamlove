@@ -1,0 +1,24 @@
+.sub{margin-bottom: 100px;}
+.sub .sub_banner{position: relative; box-sizing: border-box;}
+.sub .sub_banner img{width: 100%;}
+
+.sub .sub_tit{position: absolute; bottom: 50%; left: 50%; color: #fff; transform: translateX(-50%); text-align: center;}
+.sub .sub_tit h2{padding-bottom: 80px; font-size: 96px; font-weight: 900;}
+.sub .sub_tit p{font-size: 38px; line-height: 50px; font-weight: 700;}
+
+/* ----------------------- */
+.sub_abs{background-color: #fff; position: absolute; bottom: 0; 
+              left: 50%; transform: translateX(-50%); padding: 40px;}
+
+/* ----------------------- */
+.introduce{text-align: center; background-color:#ffeed6;}
+.introduce h2{padding-top: 90px; line-height: 70px; padding-bottom: 60px;}
+.introduce > p{line-height: 30px; padding-bottom: 40px;}
+
+.introduce h3{}
+.introduce .introd_txt > div{text-align: start; padding: 20px 20px;}
+/* .introduce .introd_txt .introd_txt_left{padding-right: 60px;} */
+
+/* ------- */
+.introd_last p{text-align: center; margin: 40px 0; line-height: 40px;}
+.introd_last p span{font-weight: 700; font-size: 28px;}
