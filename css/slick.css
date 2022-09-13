@@ -171,3 +171,11 @@
 .meal_slider  .slick-slide.slick-active.slick-current img {
       opacity: 1;
       transform: scale(1.5); transition: 0.7s;}
+
+.meal_slider .slick-arrow{border: none; font-size: 0;}
+.meal_slider .slick-prev::after{content: ''; width:22px; height:22px; border-bottom:2px solid #666666; border-right: 2px solid #555; 
+    transform: rotate(133deg); translate: (-2px -2px); display: block; position: absolute; top: 50%; left: 0;
+    z-index:9;}
+.meal_slider .slick-next::after{content: ''; width:22px; height:22px; border-bottom:2px solid #666666; border-right: 2px solid #555; 
+    transform: rotate(315deg); translate: (-2px -2px); display: block; position: absolute; top: 50%; right: 0;
+    z-index:9;}

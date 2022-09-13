@@ -260,6 +260,7 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
                                 padding: 50px; width: 500px; height: 350px; border-radius: 50px;
                                 border-top: 5px solid#E84E0F; border-right: 5px solid #E84E0F;
                                 box-shadow: -2px 4px 2px 0 rgb(197, 197, 197);}
+/* .call_box{display: none;} */
 .call_box h3{text-align: center; padding-bottom: 30px;}
 .call_box > div {padding: 10px 0;}
 .call_box > div input{border: 1px solid #ccc; line-height: 30px;}

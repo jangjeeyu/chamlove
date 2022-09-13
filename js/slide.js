@@ -58,3 +58,14 @@ $(function(){
     centerMode:true
   });
 })
+
+//퀵버튼-상담예약 팝업창
+$(function(){
+  $('#call_quick .main').click(function(){
+    $('.call_box').show()
+  });
+  // $('.modal').click(function(){
+  //   $('#pop_up').fadeIn(600);
+  //   winOpen()
+  // })
+})
