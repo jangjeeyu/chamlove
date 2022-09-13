@@ -72,7 +72,7 @@ h3{font-weight: 700; font-size: 32px;}
 .quick_menu .menu_min a .sec2_min p{font-size: 17px; color: #555;}
 
 /* banner */
-.banner{margin-top: -3px; margin-bottom: 200px;}
+.banner{margin-top: -3px; margin-bottom: 150px;}
 .banner img{width: 100%;}
 
 /* --------vision------ */
@@ -93,35 +93,39 @@ h3{font-weight: 700; font-size: 32px;}
 #sec3_vis .vis_min>div::after{content: ''; width: 100%; height:100%;  background-color: rgb(0, 0, 0); position: absolute; top:0; left:0;opacity: 40%;}
 #sec3_vis .vis_min>div:hover::after{display: none; }
 
+/* --------------- */
+.row_line{position: relative; width: 2px; height: 50px; border-radius: 20px; background-color: #017c07; position: absolute; top: -2.5%; left: 50%;}
+/* .row_line p{position: absolute; width: 500px; bottom: -120%; right: -50%; transform: translateX(50%); 
+            text-align: center; color: #017c07;} */
+
 /* --------------------------program-양한방-------------------------- */
-.rehb_medi {position: relative; justify-content: inherit; margin-bottom: 200px;}
-.rehb_medi .box .slider-for{width: 60%;}
-.rehb_medi .box .slider-for > div img{width: 100%;}
-.rehb_medi .box .slider-nav{width: 60%;}
-.rehb_medi .right #right_eng{font-size: 38px; opacity: 20%; line-height: 100px;}
+#sec4_prog1{background-color: #fcfff9; padding: 100px 0; position: relative;}
 
-/* width: 36.6%; height: 21.5%; 
-*/
+.rehb_medi {position: relative; left: 50%;transform: translateX(-50%); top: 0;}
+.rehb_medi .box{position: relative;}
+.rehb_medi .box .slider-for > div img{width: 80%;}
 
-.rehb_page{width: 100%; height: 100%; box-shadow: #555; 
-           border-radius: 30px;
-           position: absolute; bottom: 5%; right: 0; background-color: #fff; box-shadow: 4px 2px 6px rgb(177, 177, 177); overflow: hidden;}
-           
+.rehb_medi .right{position: absolute; left: 52%; top: 5%; z-index: 9;}
+.rehb_medi .right #right_eng{font-size: 38px; opacity: 20%; line-height: 90px;}
+
+.slider-nav{position:absolute; right: 20%; top: 35%; box-shadow: #555; 
+            border-radius: 30px; background-color: #fff; 
+            box-shadow: 4px 2px 6px rgb(177, 177, 177);}    
 .rehb_page > div {padding:40px 0 0 60px; line-height: 30px;}
-.rehb_page h2{margin-bottom: 40px;}
-.rehb_page h3{margin-bottom: 15px;}
+.rehb_page h2{margin-bottom: 50px; margin-top: 20px;}
+.rehb_page h3{margin-bottom: 25px; font-weight: 600;}
 .rehb_page h2 span{font-size: 32px; font-weight: 400;}
-/* .rehb_page p{margin-bottom: 30px;} */
+.rehb_page p{margin-bottom: 30px;}
 .rehb_page h6{padding-top: 30px; padding-bottom: 10px;}
 .rehb_page img{width: 45px; height: 45px; padding: 30px 30px; }
 .span1{ background-color: #f8f8f8; display: inline-block; border-radius: 50px; margin-bottom: 30px;}
 
 /* ---------------재활치료 프로그램----------------------------------- */
 #sec5_prog2{position: relative; margin-bottom: 200px;}
-#sec5_prog2 > p{position: absolute; width: 40%; height: 85%; background-color: #FAC18A; z-index: -1; right: 0; top: 0; border-radius: 20px 0 0 20px;}
+#sec5_prog2 > p{position: absolute; width: 40%; height: 85%; background-color: #fff4ea; z-index: -1; right: 0; top: 0;}
 
-#sec5_prog2 .left{width: 40%;}
-.rehb_exer .left #left_eng{font-size: 38px; opacity: 20%; line-height: 100px;}
+#sec5_prog2 .left{width: 40%; padding-top: 100px;}
+.rehb_exer .left #left_eng{font-size: 38px; opacity: 20%; line-height: 90px;}
 .rehb_exer .left h2{margin-bottom: 100px;}
 .rehb_exer .left h3{margin-bottom: 40px;}
 .rehb_exer h6{padding-top: 60px; padding-bottom: 20px;}
@@ -129,6 +133,7 @@ h3{font-weight: 700; font-size: 32px;}
 
 #sec5_prog2 .right{width: 60%;}
 #sec5_prog2 .right .right_img img{width: 100%; padding-top: 9%;}
+
 
 /* ---------------간호간병 서비스-------------------------------------- */
 #sec6_nursing {margin-bottom: 250px;}
@@ -185,6 +190,18 @@ h3{font-weight: 700; font-size: 32px;}
 .custom li:hover, .notice li:hover{color: #E84E0F; font-weight: 700;}
 .notice li .notice_date{font-size: 16px; font-weight: 200; color: #555;}
 
+.custom > div{position: relative;}
+.custom span{width: 20px; height: 2px; background-color: rgb(131, 131, 131);
+                 position: absolute; display: block; right: 3%; bottom: 50%;}
+.custom > div span:nth-of-type(1){transform: rotate(90deg);}
+.custom > div.span:hover{background-color: #000;}
+
+.notice > div{position: relative;}
+.notice span{width: 20px; height: 2px; background-color: rgb(131, 131, 131);
+                 position: absolute; display: block; right: 3%; bottom: 50%;}
+.notice > div span:nth-of-type(1){transform: rotate(90deg);}
+.notice > div.span:hover{background-color: #000;}
+
 /* ----------------식단안내------------------- */
 #sec10_meal{margin-bottom: 100px;}
 .meal_notice{text-align: center; background-color:#dbecc8; padding: 40px 0; line-height: 50px; margin-bottom: 74px;}
@@ -215,9 +232,53 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
 .foot .foot_bottom .bot3 .number{font-weight: 700; font-size: 50px;}
 .foot .foot_bottom .bot3_txt{padding-top: 20px;}
 
+/* -----------퀵버튼---------------- */
+#quick_btn{position:fixed; right: 0; bottom: 100px; }
+#quick_btn button{margin-bottom: 3px;}
+#quick_btn .call{width: 50px; height: 50px;border: none;
+        background: url(../images/phone-call_white.png) no-repeat center;
+        background-size: 30px 30px; background-color: transparent; border-radius: 50%;
+        font-size: 0; display: block; background-color: #E84E0F;
+        cursor: pointer; transition-duration: 0.3s;}
+#quick_btn .main{width: 50px; height: 50px;border: none;
+        background: url(../images/support_white.png) no-repeat center;
+        background-size: 30px 30px; background-color: transparent; border-radius: 50%;
+        font-size: 0; display: block; background-color: #E84E0F;
+        cursor: pointer; transition-duration: 0.3s;}
+/* #quick_btn .main:hover{background-size: 80px 80px;} */
 
+#quick_btn .top{width: 50px; height: 50px; border-radius: 50%; border: none;
+                background-color: #ddd; font-size: 0; cursor: pointer;}
+#quick_btn .top:hover::after{transform: rotate(45deg) translate(-1px, -1px);}
+#quick_btn .top::after{content: '';display: block;width: 8px;height: 8px;
+                        border-bottom: 2px solid #666;border-right: 2px solid #666;
+                        transform: rotate(225deg) translate(6px, 6px); margin: auto;
+                        transition-duration: 0.3s; }
 
+#quick_btn .call_quick{position: relative;}
+#quick_btn .call_quick .call_box{position: absolute; right: 120%; bottom: 0; background-color: #fff;
+                                padding: 50px; width: 500px; height: 300px; border-radius: 50px;
+                                border-top: 5px solid#E84E0F; border-right: 5px solid #E84E0F;
+                                box-shadow: -2px 4px 2px 0 rgb(197, 197, 197);}
+.call_box h3{text-align: center; padding-bottom: 30px;}
+.call_box > div {padding: 10px 0;}
+.call_box > div input{border: 1px solid #ccc; line-height: 30px;}
+.call_box .name > label{padding-right:19px;}
+.more .def_menu > label{padding-right: 19px;}
 
+.more{justify-content: inherit;}
+#quick_btn .more .def_menu > label{position: relative;}
+#quick_btn .more .def_menu > label::after{content: ''; display: block; width: 4px; height: 4px;
+                                        border-bottom: 1px solid #666; border-right: 1px solid #666;
+                                        transform: rotate(45deg) translate(6px, 6px); position: absolute; right: -160%;
+                                        top: 25%;}
+.more textarea{border: 1px solid #ccc; margin-left: 10px;}
+#quick_btn .more .def_menu select{border: 1px solid #ccc; line-height: 30px;}
+#checkbox{text-align: center;}
+
+#quick_btn #subm_btn{text-align: center;}
+#quick_btn #subm_btn input{background-color: #FAC18A; border: none; color: #fff; padding: 20px 50px; border-radius: 50px;
+                           box-shadow:1px 3px 2px 0 rgb(138, 137, 137);}
 /* 1024px */
 @media all and (max-width:1024px){
         #main .main_text h2{padding-bottom: 20px; line-height: 40px; 

@@ -16,8 +16,7 @@
 
     <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/user.js" ></script>
-    <script src="js/slick_option.js"></script>
-    <script src="js/center.js"></script>
+    <script src="js/slide.js"></script>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
             <div class="flex inner1">
                 <h1 id="logo">
                     <a href="index.html">
-                        <img src="images/logo.png">
+                        <img src="images/chamlogo.png">
                     </a>
                 </h1>
                 <nav id="nav">
@@ -90,7 +89,7 @@
             <img src="images/main1.png" alt="할머니와 여자가 마주보고 웃는 이미지">
           </div> <!--slider img-->
           <div class="main_text">
-            <h2><span class="orange">사랑</span>과 <span class="orange">정성</span>을 다하는 병원<br>참사랑 요양병원</h2>
+            <h2><span>사랑</span>과 <span>정성</span>을 다하는 병원<br>참사랑 요양병원</h2>
             <p class="regular">참사랑 재활병원의 의료진이 환자 가족들의<br>근심걱정을 함께 해결해 드립니다.</p>
           </div> <!--main text-->
         </div>
@@ -136,7 +135,7 @@
 
     <div class="banner">
       <img src="images/banner1.png">
-      <img src="images/banner2.png">
+      <!-- <img src="images/banner2.png"> -->
     </div>
 
     <section id="sec3_vis">
@@ -172,75 +171,122 @@
       </div>
     </section>
 
-    <section id="sec4_prog1" class="inner1">
-      <div class="rehb_medi">
-
-        <section class="box flex">
-          <article class="slider-for slider">
-            <div><img src="images/rehab.jpg"></div>
-            <div><img src="images/exercise.jpg"></div>
-            <!-- <div class="left"><img src="images/rehab.jpg"></div> -->
-          </article>
-
-          <!-- <div>
-            <p id="right_eng" class="green medium">Rehabilitation medicine</p>
-            <h2>양한방 <span class="thin">프로그램</span></h2>
-          </div> -->
-
-          
-          <article class="slider-nav slider">
+    <section id="sec4_prog1">
+      <div class="row_line">
+        <!-- <p>"재활, 오늘보다 건강해질 내일을 위해"</p> -->
+      </div>
+      <div class="rehb_medi inner1">
+          <div class="box flex">
+            <div class="right">
+              <p id="right_eng" class="green medium">Rehabilitation medicine</p>
+              <h2>양한방 <span class="thin">프로그램</span></h2>
+            </div>
+            <div class="slider-for slider">
               <div>
-                <div class="rehb_page">
+                <img src="images/rehab.jpg" alt=""></div>
+              <div>
+                <img src="images/exercise.jpg" alt=""></div>
+            </div>
+  
+            <div class="slider-nav slider">
+              <div class="rehb_page">
                 <h2>01<span>/02</span></h2>
                 <h3 class="green medium">한방내과</h3>
                 <p>중풍, 위장질환, 장질환, 불안, 우울, 불면, 두통, 상열감,<br>
-                가슴 답답함 등을 전통 한방 요법을 통해 해결</p>
+                  가슴 답답함 등을 전통 한방 요법을 통해 해결</p>
                 <h6>치료효과 · 효능</h6>
                 <span class="span1">
                   <img src="images/effect1.png" alt="스트레칭 아이콘">
                 </span>
                 <span class="span1">
                   <img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
-               </div>
-
-               <div  class="rehb_page">
+              </div>
+              <div class="rehb_page">
                 <h2>02<span>/02</span></h2>
                 <h3 class="green medium">한방 재활 의학과</h3>
                 <p>마비치료분야, 통증치료분야, 노인치료분야</p>
                 <h6>치료효과 · 효능</h6>
                 <span class="span1">
-                  <img src="images/effect1.png" alt="스트레칭 아이콘">
+                 <img src="images/effect1.png" alt="스트레칭 아이콘">
                 </span>
                 <span class="span1">
-                  <img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
-               </div> <!--rehb absolute page-->
-              </div>
-            </article>
-          </section>
-      </div> <!--rehb medi-->
-    
+                 <img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
+               </div> <!--rehb page-->
+              </div> <!--slide nav-->
+            </div> <!--box-->
+          </div> <!--rehb medi-->
+        </div>
+    </section>
 
     <section id="sec5_prog2">
       <p></p><!--뒤쪽 주황 배경 들어갈 부분-->
-      <div class="rehb_exer flex inner1">
-        <div class="left">
-          <p class="orange medium" id="left_eng">Rehab Exercise</p>
-          <h2>재활치료 <span class="thin">프로그램</span></h2>
-          <h3 class="orange">재활운동치료 프로그램</h3>
-          <p>재활치료사 자격 이수자 및 운동치료사 자격을 갖춘 치료사들의<br>
-          고급치료로 환자들을 치료</p>
-          <p>그룹운동을 통한 치료사와 환자들의 원활한 유대관계 및<br>
-          가족적인 분위기 조정으로 치료에 흥미를 유도</p>
-          <h6>치료효과 · 효능</h6>
-          <span class="span1"><img src="images/effect1.png" alt="스트레칭 아이콘"></span>
-          <span class="span1"><img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
-        </div> <!--left-->
-        <div class="right">
-          <div class="right_img">
-            <img src="images/exercise.jpg">
-          </div>
-        </div> <!--right-->
-      </div> <!--rehab exer-->
+      <div class="sec5_slider">
+        <div>
+        <div class="rehb_exer flex inner1">
+          <div class="left">
+            <p class="orange medium" id="left_eng">Rehab Exercise</p>
+            <h2>재활치료 <span class="thin">프로그램</span></h2>
+            <h3 class="orange">재활운동치료 프로그램</h3>
+            <p>재활치료사 자격 이수자 및 운동치료사 자격을 갖춘 치료사들의<br>
+              고급치료로 환자들을 치료</p>
+            <p>그룹운동을 통한 치료사와 환자들의 원활한 유대관계 및<br>
+              가족적인 분위기 조정으로 치료에 흥미를 유도</p>
+            <h6>치료효과 · 효능</h6>
+              <span class="span1"><img src="images/effect1.png" alt="스트레칭 아이콘"></span>
+              <span class="span1"><img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
+          </div> <!--left-->
+          <div class="right">
+            <div class="right_img">
+              <img src="images/exercise.jpg">
+            </div>
+          </div> <!--right-->
+        </div> <!--rehab exer-->
+      </div>
+
+      <div>
+        <div class="rehb_exer flex inner1">
+          <div class="left">
+            <p class="orange medium" id="left_eng">Rehab Exercise</p>
+            <h2>재활치료 <span class="thin">프로그램</span></h2>
+            <h3 class="orange">재활운동치료 프로그램</h3>
+            <p>재활치료사 자격 이수자 및 운동치료사 자격을 갖춘 치료사들의<br>
+              고급치료로 환자들을 치료</p>
+            <p>그룹운동을 통한 치료사와 환자들의 원활한 유대관계 및<br>
+              가족적인 분위기 조정으로 치료에 흥미를 유도</p>
+            <h6>치료효과 · 효능</h6>
+              <span class="span1"><img src="images/effect1.png" alt="스트레칭 아이콘"></span>
+              <span class="span1"><img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
+          </div> <!--left-->
+          <div class="right">
+            <div class="right_img">
+              <img src="images/exercise.jpg">
+            </div>
+          </div> <!--right-->
+        </div> <!--rehab exer-->
+      </div>
+
+      <div>
+        <div class="rehb_exer flex inner1">
+          <div class="left">
+            <p class="orange medium" id="left_eng">Rehab Exercise</p>
+            <h2>재활치료 <span class="thin">프로그램</span></h2>
+            <h3 class="orange">재활운동치료 프로그램</h3>
+            <p>재활치료사 자격 이수자 및 운동치료사 자격을 갖춘 치료사들의<br>
+              고급치료로 환자들을 치료</p>
+            <p>그룹운동을 통한 치료사와 환자들의 원활한 유대관계 및<br>
+              가족적인 분위기 조정으로 치료에 흥미를 유도</p>
+            <h6>치료효과 · 효능</h6>
+              <span class="span1"><img src="images/effect1.png" alt="스트레칭 아이콘"></span>
+              <span class="span1"><img src="images/effect2.png" alt="근력강화운동 아이콘"></span>
+          </div> <!--left-->
+          <div class="right">
+            <div class="right_img">
+              <img src="images/exercise.jpg">
+            </div>
+          </div> <!--right-->
+        </div> <!--rehab exer-->
+      </div>
+      </div> <!--lazy slider-->
     </section>
 
     <section id="sec6_nursing">
@@ -354,7 +400,8 @@
       <div class="flex">
         <article class="custom">
           <div>
-            <h3>고객의 소리</h3><span></span>
+            <h3>고객의 소리</h3>
+            <span></span><span></span>
           </div>
           <ul>
           <li><a href="#">2022년 1급 민간자격증 온라인강의 전액장학생 모집</a></li>
@@ -366,7 +413,7 @@
         
         <article  class="notice">
           <div>
-            <h3>공지사항</h3><span></span>
+            <h3>공지사항</h3><span></span><span></span>
           </div>
           <ul>
           <li><a href="#">2022년 4월 1일 인공신장실 OPEN</a><p class="notice_date">2022. 03. 25</p></li>
@@ -465,6 +512,46 @@
         </div>
       </div> <!--foot-->
     </footer>
+
+    <div id="quick_btn">
+      <div class="call_quick">
+        <button class="main">상담팝업창</button>
+        <div class="call_box">
+          <h3>상담 예약하기</h3>
+            <div class="name">
+              <label>이름</label>
+              <input type="text" placeholder="이름을 입력해주세요">
+            </div>
+            <div class="number">
+              <label>연락처</label>
+              <input type="text" placeholder="번호을 입력해주세요">
+            </div>
+            
+            <div class="more flex">
+              <div class="def_menu">
+                <label>분류</label>
+                <select id="def">
+                  <option value="입/퇴원">입/퇴원</option>
+                  <option value="비급여관련">비급여관련</option>
+                  <option value="기간">기간</option>
+                  <option value="특수성">특수성</option>
+                  <option value="기타">기타</option>
+                </select>
+              </div>
+              <textarea placeholder="기타 입력사항"></textarea>
+            </div>
+            <div id="checkbox">
+              <input type="checkbox">
+              <label>개인정보 취급방침에 동의<span>[자세히 보기]</span></label>
+            </div>
+            <div  id="subm_btn">
+              <input type="submit" value="상담예약">
+            </div>
+        </div>
+      </div>
+        <button class="call">전화바로연결</button>
+      <button class="top">위로가기</button>
+    </div>
 
 </body>
 </html>
