@@ -127,9 +127,26 @@
 .lazy .slick-dots{position: absolute; bottom: 25%; left: 8%;
                 display: flex; flex-wrap: nowrap; flex-direction: row;} 
 .lazy .slick-dots li{margin-right: 10px;}
-.lazy .slick-dots li button{display: block; width: 8px;
-                             height: 8px; background-color: #fff; border: none; border-radius: 50%; font-size: 0;}
-.lazy .slick-dots li.slick-active button{background-color:#E84E0F; width: 40px; border-radius: 10px; transition: 0.5s;}
+.lazy .slick-dots li button{display: block; width: 20px;
+                             height: 20px; background-color: #fff; border: none; border-radius: 50%; font-size: 0;  transition: 0.5s;}
+.lazy .slick-dots li.slick-active button{background-color:#E84E0F; width: 60px; border-radius: 10px;}
+
+/* .lazy .slick-active .main_txt{position: absolute;
+    bottom: 50%;
+    left: 18%;
+    line-height: 5rem;
+    opacity: 0;
+    transition: 0.5s;
+    animation: 4s main_txt forwards;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: main_txt;
+} */
 
 /* 양한방 프로그램 */
 .box {width:100%;margin:0 auto}
@@ -149,12 +166,12 @@
     display: block; position: absolute; right: -55%; top: 50%; z-index: 9;}
 
 /* 재활 */
-.sec5_slider .slick-dots{position: absolute; bottom: 40%; right: 5%; transform: translateX(50%);
-    display: flex; flex-wrap: nowrap; flex-direction:column;} 
+.sec5_slider .slick-dots{position: absolute; bottom: 0%; right: 33%; transform: translateX(50%);
+    display: flex; flex-wrap: nowrap; flex-direction:row;} 
 .sec5_slider .slick-dots li{margin: 10px;}
 .sec5_slider .slick-dots li button{display: block; width: 20px;
-                 height: 20px; background-color: rgb(196, 196, 196); border: none; border-radius: 50%; font-size: 0;}
-.sec5_slider .slick-dots li.slick-active button{background-color:#E84E0F;height: 210px;  border-radius: 10px; transition: 0.5s;}
+                 height: 20px; background-color: #fff; border: none; border-radius: 50%; font-size: 0; transition: 0.5s;}
+.sec5_slider .slick-dots li.slick-active button{background-color:#E84E0F; width: 100px;  border-radius: 10px;}
 
 /* 간호간병 서비스 슬라이드 버튼 */
 .center button{border: none; font-size: 0;}
@@ -167,10 +184,10 @@
 /* .box1{width:100%;} */
 /* .meal_slider  {margin:40px} */
 .meal_slider  .slick-slide {margin:0 50px;padding:10px;height:auto;}
-.meal_slider  .slick-slide img {transition:.3s;}
+.meal_slider  .slick-slide img {transition:.3s; width: 100%;}
 .meal_slider  .slick-slide.slick-active.slick-current img {
       opacity: 1;
-      transform: scale(1.5); transition: 0.7s;}
+      transform: scale(1.5); transition: 0.7s; height: 300px;}
 
 .meal_slider .slick-arrow{border: none; font-size: 0;}
 .meal_slider .slick-prev::after{content: ''; width:22px; height:22px; border-bottom:2px solid #666666; border-right: 2px solid #555; 

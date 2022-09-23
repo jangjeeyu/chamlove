@@ -4,7 +4,8 @@ $(function(){
       lazyLoad: 'ondemand', // ondemand progressive anticipated
       infinite: true,
       arrows:false,
-      dots:true
+      dots:true,
+      autoplay:true
     });
 })
 
