@@ -9,22 +9,22 @@
 .green{color: #61922B ;}
 
 
-h2{font-size: 50px; font-weight: 700;}
-h3{font-weight: 700; font-size: 32px;}
+h2{font-size: 50px; font-weight: 500;}
+h3{font-weight: 400; font-size: 32px;}
 .thin{font-weight: 100;}
-.regular{font-weight: 400;}
-.medium{font-weight: 500;}
+.regular{font-weight: 300;}
+.medium{font-weight: 400;}
 
 
-#wrap{position: relative;}
+#wrap{position: relative; transition: 0.5s;}
 #header{position: relative; background-color: #fff; width: 100%; height: 100px; 
         padding: 40px 0; box-sizing:border-box; z-index: 1;}
 #section{} 
 #footer{}
 
 /* nav */
-#header {z-index: 9999; transform: tran;}
-#header .gnb > li{width: 170px;  position: relative; text-align: center;}
+#header {z-index: 9999;}
+#header .gnb > li{position: relative; text-align: center; padding: 0 40px;  transition: 0.5s;}
 #header .gnb > li > a{position: relative; font-weight: 400;  padding:10px; display: inline-block;} 
 #header .gnb > li > a:hover{color: #E84E0F; transition: 0.5s;}
 #header .gnb > li > a::after{content: ''; display: block; width:8px; height: 8px; background-color: #E84E0F; position: absolute; 
@@ -35,21 +35,28 @@ h3{font-weight: 700; font-size: 32px;}
 #header .gnb:hover .depth2{ height:300px; transition: 0.5s; }
 
 #header .gnb::before{content: ''; display: block; width: 1920px; height: 0; background-color: #fff;
-                     position: absolute; transition: 0.5s; top: 100px; left: 0;}
+                     position: absolute; transition: 0.5s; top: 90px; left: 0;}
 #header .gnb:hover::before{height: 250px; transition: 0.5s; padding: 30px 0;}
 
 #header .gnb .depth2 > li{padding: 15px 0; font-size: 16px;}
 #header .gnb .depth2 > li:hover{color:#E84E0F; transition: 0.5s; font-weight: 700;}
 
-.nav_btn{position: relative; }
-.nav_btn .lang{padding: 5px 30px; border: none;
-                    font-size: 16px; cursor: pointer; } 
-.nav_btn .div1{background-color: rgb(255, 255, 255); width: 80px ; height: 100px; position: absolute; top: 60px; right: -10px; text-align: center; font-size: 14px;padding: 10px 0; line-height: 30px; cursor: pointer; display: none;}
-.nav_btn .div1 p:hover{color: #ccc;}
+/* .lang_btn{position: relative; } */
+.lang_btn .lang{padding: 5px 30px; border: none; top: 10px;
+                    font-size: 16px; cursor: pointer; position: relative;} 
+.lang_btn .div1{background-color: rgb(255, 255, 255); width: 80px ; height: 100px; position: absolute; top: 90px; text-align: center; font-size: 14px;padding: 10px 0; line-height: 30px; cursor: pointer; display: none;}
+.lang_btn .div1 p:hover{color: #ccc;}
 
+.burg_btn{display: none;}
+.burg_btn .burg_nav{position: absolute; background-color: #fff; width: 100%; height: 100vh; right: 0; top: 0;} 
+.burg_btn .burg_nav .LeftWrap .close1{position: absolute; right: 40px; top: 40px; font-weight: 700; font-size: 30px;}
+.LeftWrap #btn1:nth-of-type(1){margin-top: 130px;}
+.LeftWrap #btn1 > li{border-bottom: 1px solid #eee; margin: 0 50px; font-size: 38px; line-height: 70px;}
+.m_sub li{font-size: 25px; color: #494949; margin-left: 30px; transition: 0.5s;}
+.m_sub li:hover{color: #017c07;}
 
 /* ------main-------- */
-#main{position: relative; box-sizing: border-box; }
+#main{position: relative; box-sizing: border-box;  }
 #main img{width: 100%;}
 /* #main .main_text{position: absolute; top: 50%; left: 21.5%; transform: translateY(-50%);} */
 #main .main_text{color: #ffffff; z-index: 2; position: absolute; bottom: 40%; padding-left:68px;}
@@ -78,15 +85,16 @@ h3{font-weight: 700; font-size: 32px;}
 
 /* --------vision------ */
 #sec3_vis{margin-bottom: 200px;}
-#sec3_vis .vis_tit{font-size: 40px; line-height: 60px; text-align: center; padding-bottom: 60px; font-weight: 700;}
-#sec3_vis .vis_tit span{font-size: 48px;}
+#sec3_vis .vis_tit{font-size: 25px; line-height: 1.5em; text-align: center; padding-bottom: 60px; font-weight: 700;}
+#sec3_vis .vis_tit span{font-size: 35px;}
 
 /* #sec3_vis .vis_min .vis_min_img1{position: relative;}  */
 #sec3_vis .vis_min{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; box-sizing: border-box;}
 #sec3_vis .vis_min .vis_min_in1 img{width: 120px; height: 120px; border-radius: 0;}
 
 #sec3_vis .vis_min>div{width: 33.333%; overflow: hidden; position: relative;}
-#sec3_vis .vis_min .vis_min_in1 p{position: absolute;top:50%;  text-align: center;left: 50%; transform: translate(-50%, -50%); color: #fff; z-index: 9; }
+#sec3_vis .vis_min .vis_min_in1 p{position: absolute;top:50%;  text-align: center;left: 50%; transform: translate(-50%, -50%); color: #fff;
+                                 z-index: 9; word-break: keep-all; }
 #sec3_vis .vis_min .vis_min_in1 p:nth-of-type(2){left: 50%; top: 70%;}
 /* #sec3_vis .vis_min .vis_min_in1 p{color: #fff;  text-align: center;} */
 #sec3_vis .vis_min>div img{width: 100%;  transition: 0.5s;}
@@ -102,30 +110,30 @@ h3{font-weight: 700; font-size: 32px;}
 /* --------------------------program-양한방-------------------------- */
 #sec4_prog1{background-color: #fcfff9; padding: 100px 0; position: relative;}
 
-.rehb_medi {position: relative; left: 50%;transform: translateX(-50%); top: 0;}
+.rehb_medi {position: relative; left: 50%; transform: translateX(-50%); top: 0;}
 .rehb_medi .box{position: relative;}
-.rehb_medi .box .slider-for > div img{width: 80%;}
+.rehb_medi .box .slider-for > div{width: 80%;}
+.rehb_medi .box .slider-for > div img{width: 80%; padding-left: 15%;}
 
 .rehb_medi .right{position: absolute; left: 52%; top: 5%; z-index: 9;}
 .rehb_medi .right #right_eng{font-size: 38px; opacity: 20%; line-height: 90px;}
 
-.slider-nav{position:absolute; right: 20%; top: 35%; box-shadow: #555; 
+.slider-nav{position:absolute; right: 20%; top: 35%; box-shadow: #555; height: 300px; overflow: hidden;
             border-radius: 30px; background-color: #fff; 
             box-shadow: 4px 2px 6px rgb(177, 177, 177);}    
-.rehb_page > div {padding:40px 0 0 60px; line-height: 30px;}
+.rehb_page > div {padding:40px 0 0 60px; line-height: 30px; }
 .rehb_page h2{margin-bottom: 50px; margin-top: 20px;}
 .rehb_page h3{margin-bottom: 25px; font-weight: 600;}
 .rehb_page h2 span{font-size: 32px; font-weight: 400;}
 .rehb_page p{margin-bottom: 30px;}
 .rehb_page h6{padding-top: 30px; padding-bottom: 10px;}
-.rehb_page img{width: 45px; height: 45px; padding: 30px 30px; }
-.span1{ background-color: #f8f8f8; display: inline-block; border-radius: 50px; margin-bottom: 30px;}
+.rehb_page img{width: 45px; height: 45px; padding: 30px 30px;  }
+.span1{ background-color: #f8f8f8; display: inline-block; border-radius: 50px; margin-bottom: 30px; }
 
 /* ---------------재활치료 프로그램----------------------------------- */
 #sec5_prog2{position: relative; margin-bottom: 200px;}
-#sec5_prog2 > p{position: absolute; width: 40%; height: 85%; background-color: #fff4ea; z-index: -1; right: 0; top: 0;}
 
-#sec5_prog2 .left{width: 40%; padding-top: 100px;}
+#sec5_prog2 .left{width: 40%; padding-top: 55px;}
 .rehb_exer .left #left_eng{font-size: 38px; opacity: 20%; line-height: 90px;}
 .rehb_exer .left h2{margin-bottom: 100px;}
 .rehb_exer .left h3{margin-bottom: 40px;}
@@ -138,7 +146,7 @@ h3{font-weight: 700; font-size: 32px;}
 
 /* ---------------간호간병 서비스-------------------------------------- */
 #sec6_nursing {margin-bottom: 250px;}
-#sec6_nursing > div > h2 {margin-bottom:90px;}
+#sec6_nursing > div > h2 {margin-bottom:50px;}
 #sec6_nursing > div ul li{border: 1px solid #ddd; width: 19vw;
                                          height: 19vw;  text-align: center; border-radius: 20px; transition-duration: 1s; position: relative;}
 #sec6_nursing > div ul li:hover{border: 1px solid #272727; transition-duration: 0.5s;}
@@ -149,35 +157,42 @@ h3{font-weight: 700; font-size: 32px;}
 
 /* ----------사회사업 프로그램------------------------------------------ */
 #sec7_social{margin-bottom: 200px;}
-#sec7_social .social_tit{font-size: 50px; padding-bottom: 160px;}
-#sec7_social .social_tit .social_tit_bord{font-weight: 700;}
+#sec7_social .social_tit{font-size: 50px; padding-bottom: 100px;}
+#sec7_social .social_tit .social_tit_bord{font-weight: 500;}
 .social_tit .org_line{width: calc((100% - 970px)/2);; height: 3px; background-color: #E84E0F; margin-top: 12px; border-radius: 50px;}
 
 /* .social_main{justify-content:inherit;} */
-.social_main article{width: 33.3333%; overflow: hidden; margin:0 5px;}
+.social_main article{width: 33.3333%; overflow: hidden; margin:0 5px; background-color: #fff; border-radius: 15px;
+                     box-shadow: 0px 2px 4px 1px rgb(212, 212, 212); transition: 0.5s;}
+.social_main article:nth-child(2){transform: translateY(40px);}
+
+.social_main article:nth-child(2):hover{transform: translateY(20px);}
+.social_main article:nth-child(1):hover{transform: translateY(-20px);}
+.social_main article:nth-child(3):hover{transform: translateY(-20px);}
+
 
 .social_main #may .may_txt, .social_main #july .july_txt{margin: 30px 0;}
 .social_main #june .june_txt{margin: 30px 0;}
 
-.social_main img{width: 100%; transition: 0.5s; overflow: hidden; box-sizing: border-box;}
-.social_main img:hover{ transform: scale(1.1); transition: 0.7s;  }
+.social_main img{width: 100%; transition: 0.5s; overflow: hidden;}
+.social_main img:hover{ transform: scale(1.1); transition: 0.7s; overflow: hidden;}
 
-.social_main h6{padding-left: 33%; padding-bottom: 10%;}
-.social_main p{padding-left: 30%;}
+.social_main h6{padding-bottom: 10%; text-align: center;}
+.social_main p{text-align: center; font-size: 18px;}
 
 /*-----------------FAQ--------------  */
 #sec8_FAQ{margin-bottom: 200px; justify-content: center; display: flex;}
-#sec8_FAQ .faq_tot .faq_tit{padding-bottom: 30px; justify-content: center; display: flex; font-size: 32px;}
-#sec8_FAQ .faq_tot .faq_tit span{font-weight: 700;}
+#sec8_FAQ .faq_tot .faq_tit{padding-bottom: 30px; justify-content: center; display: flex; font-size: 30px; font-weight: 100;}
+#sec8_FAQ .faq_tot .faq_tit span{font-weight: 500;}
 .faq_tot .faq_hst .faq_round{margin-right:30px; background-color: #fff; border: 1px solid #E84E0F; padding: 7px 23px 7px 23px;
-                             border-radius: 50px; font-size: 18px;}
+                             border-radius: 50px; font-size: 18px; transition: 0.5s; }
 .faq_hst .has_upside{margin-bottom: 20px;}
 .faq_tot .faq_hst .faq_round3, .faq_round6{background-color: #fff; border: 1px solid #E84E0F; 
                                            padding: 7px 23px 7px 23px;
-                                           border-radius: 50px; font-size: 18px;}
-.faq_tot .faq_hst .faq_round:hover{color: #fff; background-color: #E84E0F; transition: 0.5s; cursor: pointer;}
+                                           border-radius: 50px; font-size: 18px; transition: 0.5s;}
+.faq_tot .faq_hst .faq_round:hover{color: #fff; background-color: #E84E0F; cursor: pointer;}
 .faq_tot .faq_hst .faq_round3:hover, .faq_tot .faq_hst .faq_round6:hover{color: #fff; background-color: #E84E0F; 
-                                                                        transition: 0.5s; cursor: pointer;}
+                                                                         cursor: pointer;}
 
 /* ----------------------고객의 소리, 공지사항------------------------------*/
 #sec9_notice{margin-bottom: 150px;}
@@ -186,7 +201,7 @@ h3{font-weight: 700; font-size: 32px;}
 .custom h3, .notice h3{padding: 0 0rem 1.5rem 1.5rem; border-bottom: 1px solid #E84E0F; }
 .notice li{display: flex; justify-content: space-between;}
 .custom li, .notice li{padding-left:1.5rem; padding-top: 1.25rem; padding-bottom: 1.25rem; line-height: 30px;
-                        border-bottom: 1px solid rgb(243, 243, 243);}
+                        border-bottom: 2px solid rgb(228, 228, 228);}
 .custom li:nth-of-type(4), .notice li:nth-of-type(4){border: none;}
 .custom li:hover, .notice li:hover{color: #E84E0F;}
 .notice li .notice_date{font-size: 16px; font-weight: 200; color: #555;}
@@ -205,8 +220,8 @@ h3{font-weight: 700; font-size: 32px;}
 
 /* ----------------식단안내------------------- */
 #sec10_meal{margin-bottom: 100px;}
-.meal_notice{text-align: center; padding: 40px 0; line-height: 50px; }
-.meal_notice .meal_tit{font-size: 38px; font-weight: 700;}
+.meal_notice{text-align: center; padding: 40px 0; line-height: 35px; }
+.meal_notice .meal_tit{font-size: 30px; font-weight: 500;}
 
 /* #sec10_meal .today_meal img{ height: 300px;} */
 
@@ -286,15 +301,70 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
 #quick_btn #subm_btn input{background-color: #FAC18A; border: none; color: #fff; padding: 20px 50px; border-radius: 50px;
                            box-shadow:1px 3px 2px 0 rgb(138, 137, 137);}
 
-/* 1024px */
+/* 1024px -----------------------------------------------------*/
 @media all and (max-width:1024px){
+        h2{font-size: 40px;}
+        h3{font-size: 28px;}
+        #header{height: 80px; padding: 20px 0;}
         #main .main_text h2{padding-bottom: 20px; line-height: 40px; 
                                         font-size: 30px; transition: 0.8s;}
         #main .main_text p{font-size: 14px; line-height: 20px; 
                                         padding-bottom: 30px; transition: 0.8s;}
         .lazy .slick-dots li button{width: 15px; height: 15px; transition: 0.8s;}
         .slick-dots li.slick-active button{width: 30px;}
+
+        #header .gnb > li{padding: 0 20px;}
+        .banner{ margin-bottom: 100px;}
+
+        #sec3_vis{margin-bottom: 100px;}
+        #sec3_vis .vis_tit{font-size: 20px;}
+        #sec3_vis .vis_tit span{font-size: 30px;}
+
+        .rehb_medi .right #right_eng{font-size: 30px;line-height: 40px;}  
+    /* .rehb_page > div {padding:40px 0 0 60px; line-height: 30px; } */
+    .rehb_page h2{margin-bottom: 30px; font-size: 40px;}
+    .rehb_page h3{margin-bottom: 20px; font-size: 25px;}
+    .rehb_page h2 span{font-size: 28px; font-weight: 100;}
+    .rehb_page p{margin-bottom: 20px;font-size: 18px;}
+    .rehb_page h6{padding-top: 10px; padding-bottom: 5px;}
+    .rehb_page img{width: 30px; height: 30px; padding: 20px 20px;}
+    .rehb_medi .right > h2{font-size: 30px}
+
+    #sec5_prog2{ margin-bottom: 100px;}
+    .rehb_exer .left #left_eng{font-size: 30px; line-height: 40px;}
+    .rehb_exer .left h2{font-size: 30px; margin-bottom: 50px;}
+    .rehb_exer .left h3{font-size: 25px; margin-bottom: 25px;}
+    .rehb_exer .left p{font-size: 18px; word-break: keep-all;}
+    .rehb_exer h6 {padding-top: 40px; padding-bottom: 10px;}
+    .rehb_exer .left img{width: 30px; height: 30px; padding: 20px 20px;}
+    .sec5_slider .slick-dots{bottom: 10%;}
+
+    #sec6_nursing > div > h2 {margin-bottom: 20px; font-size: 30px;}
+    #sec6_nursing{margin-bottom: 120px;}
+    #sec7_social .social_tit {padding-bottom: 80px; font-size: 40px; transition: 0.5s; justify-content: space-around;}
+
+    .foot_bottom .bot1 > p, .foot_bottom .bot2 > p{font-size: 14px;}
+    .foot_bottom .bot2{padding-left: 80px;}
+        }
+
+/* 842px */
+@media all and (max-width:842px){
+        #header{height: 60px; padding: 10px 0;}
+        #header nav {display: none;}
+        .lang_btn .lang{top: 4px;}
+        .lang_btn .burg_btn{display: block; padding-top: 8px; cursor: pointer; margin-left: 20px; margin-right: 20px;}
+        .lang_btn .div1{right:60px; top: 50px;}
+
+        #sec3_vis .vis_min .vis_min_in1 p{font-size: 18px; font-weight: 300; transition:0.5s;}
+
+        .faq_tot .faq_hst .faq_round{margin-right: 10px;}
+
+        #sec9_notice > div{display: block;}
+        #sec9_notice > div article{width: 100%; margin-bottom: 50px;}
+        article li:nth-of-type(3), article li:nth-of-type(4){display: none;}
+        article li:nth-of-type(2){border: none;}
+
+
 }
 
-/* 768px */
-@media all and (max-width:768px){}
+/* *772px 되면 양한방/재활치료 한페이지로 만들기 */

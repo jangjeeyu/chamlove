@@ -166,12 +166,12 @@
     display: block; position: absolute; right: -55%; top: 50%; z-index: 9;}
 
 /* 재활 */
-.sec5_slider .slick-dots{position: absolute; bottom: 0%; right: 33%; transform: translateX(50%);
+/* .sec5_slider .slick-dots{position: absolute; bottom: 0%; right: 33%; transform: translateX(50%);
     display: flex; flex-wrap: nowrap; flex-direction:row;} 
 .sec5_slider .slick-dots li{margin: 10px;}
 .sec5_slider .slick-dots li button{display: block; width: 20px;
                  height: 20px; background-color: #fff; border: none; border-radius: 50%; font-size: 0; transition: 0.5s;}
-.sec5_slider .slick-dots li.slick-active button{background-color:#E84E0F; width: 100px;  border-radius: 10px;}
+.sec5_slider .slick-dots li.slick-active button{background-color:#E84E0F; width: 100px;  border-radius: 10px;} */
 
 /* 간호간병 서비스 슬라이드 버튼 */
 .center button{border: none; font-size: 0;}
