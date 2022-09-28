@@ -25,6 +25,7 @@
 /* ------- */
 /* .introd_txt .introd_txt_left p{word-break: keep-all;} */
 /* .introd_txt .introd_txt_right p{word-break: keep-all;} */
+.introduce .introd_txt p{word-break: keep-all;}
 .introd_last p{text-align: center; margin: 40px 0; line-height: 40px;}
 .introd_last p span{font-weight: 700; font-size: 28px;}
 
@@ -72,6 +73,8 @@
         padding-bottom: 30px;
         font-size: 28px ;
     }
+    .introduce .introd_txt {display: inherit;}
+    .introduce .introd_txt p{text-align: center;}
 }
 
 /* 473px */
