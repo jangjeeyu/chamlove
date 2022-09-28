@@ -513,8 +513,8 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
         /* #main .slider_img img{ display: none;} */
         #main .slider_img{width: 100%; height: 500px; 
                 background-image: url(../images/mobile_banner2.png);
-                background-size: cover;}
-        #main .slide_img2{width: 100%; height: 500px; background-image: url(../images/mobile_banner.png);      background-size: cover;}
+                background-size: cover; background-position-y: -150px;}
+        #main .slide_img2{width: 100%; height: 500px; background-image: url(../images/mobile_banner.png);      background-size: cover; background-position-y: -70px;}
         .lazy .slick-dots{left: 50%; bottom: 10%;} 
         .lazy .slick-dots li button{width: 5px; height: 5px;}
         #main .main_text{bottom: 10%;padding-left: 10px;
