@@ -318,10 +318,11 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
                         transition-duration: 0.3s; }
 
 #quick_btn .call_quick{position: relative;}
-#quick_btn .call_quick .call_box{position: absolute; right: 120%; bottom: 0; background-color: #fff;
-                                padding: 50px; width: 500px; height: 350px; border-radius: 50px;
-                                box-shadow: -2px 4px 0px 0 #E84E0F; display: none;}
+ .call_box{position: fixed; right: 100px; bottom: 100px; background-color: #fff;
+                                padding: 50px; width: 600px; height: 350px; border-radius: 50px;
+                                box-shadow: -2px 4px 0px 0 #E84E0F; display: none; box-sizing: border-box; z-index: 99;}
 /* .call_box{display: none;} */
+
 .call_box h3{text-align: center; padding-bottom: 30px;}
 .call_box .close img{width: 25px; height: 25px; position: absolute; top: 55px; right: 60px; cursor: pointer;}
 /* .call_box .close::after{ position: absolute;
@@ -334,17 +335,17 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
 .more .def_menu > label{padding-right: 19px;}
 
 .more{justify-content: inherit;}
-#quick_btn .more .def_menu > label{position: relative;}
-#quick_btn .more .def_menu > label::after{content: ''; display: block; width: 4px; height: 4px;
+.more .def_menu > label{position: relative;}
+.more .def_menu > label::after{content: ''; display: block; width: 4px; height: 4px;
                                         border-bottom: 1px solid #666; border-right: 1px solid #666;
                                         transform: rotate(45deg) translate(6px, 6px); position: absolute; right: -160%;
                                         top: 25%;}
 .more textarea{border: 1px solid #ccc; margin-left: 10px;}
-#quick_btn .more .def_menu select{border: 1px solid #ccc; line-height: 30px;}
+.more .def_menu select{border: 1px solid #ccc; line-height: 30px;}
 #checkbox{text-align: center;}
 
-#quick_btn #subm_btn{text-align: center;}
-#quick_btn #subm_btn input{background-color: #FAC18A; border: none; color: #fff; padding: 20px 50px; border-radius: 50px;
+#subm_btn{text-align: center;}
+ #subm_btn input{background-color: #FAC18A; border: none; color: #fff; padding: 20px 50px; border-radius: 50px;
                            box-shadow:1px 3px 2px 0 rgb(138, 137, 137);}
 
 /* 1100px -----------------------------------------------------*/
@@ -501,6 +502,17 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
         #sec7_social{position: relative;}
         #sec7_social .social_more{display: block;}
         .faq_tot .faq_hst .faq_round3, .faq_round6{display: none;}    
+
+        .call_box{width: 90%; right: 5%;     padding: 10px;
+                height:auto;}
+        .call_box .close img {
+                        top: 25px;
+                    }
+         .call_box h3 {
+                        text-align: center;
+                        margin: 10px 0; padding-bottom: 0;
+                    }
+       
 }
 
 
@@ -545,6 +557,18 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
         .bot3 .bot3_txt{display: none;}
         .foot .foot_bottom .bot3 .number{width: 150px; line-height: 30px; text-align: right; padding-top: 0px;}
         .foot .foot_top_icon img{width: 30px; height: 30px;}
+
+        .call_box .name > label, .call_box .number > label, .call_box .def_menu > label{
+                font-size: 0;
+            }
+            .call_box .name > label, .more .def_menu > label  {
+                padding-right: 0px;
+            }
+            .more .def_menu > label::after {
+                right: -90px;
+                top: -15px;
+            }
+        /* .call_box > div label{font-size: 0;} */
 }
 
 /* 466px */
@@ -582,4 +606,18 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
                                    position: absolute; top: 45px; left: 0; font-size: 25px;}
         .foot .foot_bottom .bot1{margin-top: 50px;}
 
+        .def_menu{display:none}
+        .more textarea {
+                margin-left: 5px;
+            }
+            #subm_btn input {
+                padding: 10px 20px;}
+}
+
+@media all and (max-width: 385px){
+        .call_box .close img {
+                width: 15px; height: 15px;
+                right: 30px;
+            }
+        #checkbox label span{display: flex; justify-content: center;}
 }

@@ -546,47 +546,47 @@
     <div id="quick_btn">
       <div class="call_quick">
         <button class="main">상담팝업창</button>
-        <div class="call_box">
-          <h3>상담 예약하기</h3>
-          <div class="close">
-            <img src="images/x.png">
-          </div>
-            <div class="name">
-              <label>이름</label>
-              <input type="text" placeholder="이름을 입력해주세요">
-            </div>
-            <div class="number">
-              <label>연락처</label>
-              <input type="text" placeholder="번호을 입력해주세요">
-            </div>
-            
-            <div class="more flex">
-              <div class="def_menu">
-                <label>분류</label>
-                <select id="def">
-                  <option value="입/퇴원">입/퇴원</option>
-                  <option value="비급여관련">비급여관련</option>
-                  <option value="기간">기간</option>
-                  <option value="특수성">특수성</option>
-                  <option value="기타">기타</option>
-                </select>
-              </div>
-              <textarea placeholder="기타 입력사항"></textarea>
-            </div>
-            <div id="checkbox">
-              <input type="checkbox">
-              <label>개인정보 취급방침에 동의<span>[자세히 보기]</span></label>
-            </div>
-            <div  id="subm_btn">
-              <input type="submit" value="상담예약">
-            </div>
-        </div>
       </div>
       <div class="bell_box flex">
-        <button class="bell">전화바로연결</button>
+        <a href="tel:010-000-0000" class="bell">전화바로연결</a>
       </div>
       <button class="top">위로가기</button>
     </div>
-
+    <!-- 상담팝업 -->
+    <div class="call_box">
+      <h3>상담 예약하기</h3>
+      <div class="close">
+        <img src="images/x.png">
+      </div>
+        <div class="name">
+          <label>이름</label>
+          <input type="text" placeholder="이름을 입력해주세요">
+        </div>
+        <div class="number">
+          <label>연락처</label>
+          <input type="text" placeholder="번호을 입력해주세요">
+        </div>
+        
+        <div class="more flex">
+          <div class="def_menu">
+            <label>분류</label>
+            <select id="def">
+              <option value="입/퇴원">입/퇴원</option>
+              <option value="비급여관련">비급여관련</option>
+              <option value="기간">기간</option>
+              <option value="특수성">특수성</option>
+              <option value="기타">기타</option>
+            </select>
+          </div>
+          <textarea placeholder="기타 입력사항"></textarea>
+        </div>
+        <div id="checkbox">
+          <input type="checkbox">
+          <label>개인정보 취급방침에 동의<span>[자세히 보기]</span></label>
+        </div>
+        <div  id="subm_btn">
+          <input type="submit" value="상담예약">
+        </div>
+    </div>
 </body>
 </html>
