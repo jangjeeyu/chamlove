@@ -64,7 +64,10 @@ h3{font-weight: 400; font-size: 32px;}
 .burg_nav .LeftWrap .close1{position: absolute; right: 40px; top: 40px; font-weight: 700; font-size: 25px;}
 .burg_nav .LeftWrap #btn1:nth-of-type(1){margin-top: 130px;}
 .burg_nav .LeftWrap #btn1 > li{border-bottom: 1px solid #eee; margin: 0 50px; font-size: 30px; line-height: 60px;}
+.burg_nav .LeftWrap #btn1 .hospital{border-bottom: 2px solid #017c07; color: #017c07;}
+
 .burg_nav .m_sub li{font-size: 25px; color: #494949; margin-left: 30px; transition: 0.5s;}
+.burg_nav .m_sub li a span{color: #017c07; border-bottom: 1px solid #017c07;}
 .burg_nav .m_sub li:hover{color: #017c07;}
 
 /* ------main-------- */
@@ -301,7 +304,7 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
         background: url(../images/phone-call_white.png) no-repeat center;
         background-size: 30px 30px; background-color: transparent; border-radius: 50%;
         font-size: 0; display: block; background-color: #E84E0F;
-        cursor: pointer; transition-duration: 0.3s;}
+        cursor: pointer; transition-duration: 0.3s; margin-bottom: 3px;}
 #quick_btn .main{width: 50px; height: 50px;border: none;
         background: url(../images/support_white.png) no-repeat center;
         background-size: 30px 30px; background-color: transparent; border-radius: 50%;
@@ -311,7 +314,6 @@ footer{background-color: #61922B; color: #eee; font-size: 16px; font-weight: 100
 
 #quick_btn .top{width: 50px; height: 50px; border-radius: 50%; border: none;
                 background-color: #ddd; font-size: 0; cursor: pointer;}
-#quick_btn .top:hover::after{transform: rotate(45deg) translate(-1px, -1px);}
 #quick_btn .top::after{content: '';display: block;width: 8px;height: 8px;
                         border-bottom: 2px solid #666;border-right: 2px solid #666;
                         transform: rotate(225deg) translate(6px, 6px); margin: auto;

@@ -1,4 +1,4 @@
-.sub{margin-bottom: 100px;}
+.sub{margin-bottom: 200px;}
 .sub{position: relative; box-sizing: border-box;}
 .sub .sub_banner img{width: 100%;}
 
@@ -7,38 +7,40 @@
 .sub .sub_tit p{font-size: 30px; line-height: 40px; font-weight: 500; word-break: keep-all;}
 
 /* ----------------------- */
-.sub_abs{background-color:#fff; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding: 20px 30px; width: 80%; height: 100px;}
-.sub_abs > h5{font-size: 18px; padding-bottom: 30px; padding-top: 20px;}
-.sub_abs p{ text-align: center; word-break: keep-all;}
+.sub_abs{background-color:#fff; position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); padding: 20px 30px; width: 80%;}
+.sub_abs > h5{font-size: 18px; padding-bottom: 30px; padding-top: 50px; padding-left: 20px;}
+.sub_abs p{ text-align: center; word-break: keep-all; font-weight: 300; line-height: 30px; margin-top: 70px;}
 
 /* ----------------------- */
-.introduce{text-align: center; background-color:#ffeed6;  }
-.introduce h2{padding-top: 90px; line-height: 70px; padding-bottom: 60px; word-break: keep-all;}
-.introduce > p{line-height: 30px; padding-bottom: 40px; word-break: keep-all;}
-.introduce_img{width: 100%;}
+.introduce{text-align: center; background-color:#ffeed6;}
+.introduce h2{padding-top: 100px; line-height: 70px; padding-bottom: 60px; word-break: keep-all;}
+.introduce > p{line-height: 40px; padding-bottom: 40px; word-break: keep-all;}
+.introduce_img{width: 100%; margin-top: 50px;}
 .introduce_img img{width: 100%;}
 
 .introduce h3{}
-.introduce .introd_txt > div{text-align: start; padding: 20px 15px 20px 0;}
-/* .introduce .introd_txt .introd_txt_left{padding-right: 60px;} */
+.introduce .introd_txt > div{text-align: start; padding: 20px 30px; margin-bottom: 100px; line-height: 40px; word-break: keep-all;}
+.introduce .introd_txt .introd_txt_left{width: 100%;}
+.introduce .introd_txt .introd_txt_right{width: 100%;}
 
-/* ------- */
 /* .introd_txt .introd_txt_left p{word-break: keep-all;} */
 /* .introd_txt .introd_txt_right p{word-break: keep-all;} */
 .introduce .introd_txt p{word-break: keep-all;}
-.introd_last p{text-align: center; margin: 40px 0; line-height: 40px;}
+.introd_last p{text-align: center; margin: 110px 0; line-height: 40px;}
 .introd_last p span{font-weight: 700; font-size: 28px;}
+
+
 
 
 /* 1024px */
 @media all and (max-width:1024px){
-    .sub .sub_tit h2{ font-size: 46px; font-weight: 500;}
-    .sub .sub_tit p{font-size: 25px; line-height: 30px; font-weight: 400;}
+    .sub .sub_tit h2{display: none;}
+    .sub .sub_tit p{font-size: 25px;  font-weight: 400;}
+    .sub_abs {bottom: -80px;}
     .sub_abs p{font-size: 16px;}
-    .sub_abs > h5{font-size: 16px; padding-bottom: 20px;}
+    .sub_abs > h5{font-size: 16px; padding-bottom: 10px; padding-top: 40px}
 
     .introduce h2 {
-        padding-top: 50px;
         line-height: 50px;
         padding-bottom: 40px;
         font-size: 35px ;
@@ -47,25 +49,37 @@
 
 /* 842px */
 @media all and (max-width:842px){
-    .sub .sub_tit h2{ padding-bottom: 30px;}
-    .sub .sub_tit p{font-size: 20px; line-height: 25px;}
-    .sub_abs {}
+    .sub{margin-bottom: 150px;}
+    .sub .sub_tit p{font-size: 20px; line-height: 25px;  }
+    .sub_abs p{margin-top: 30px;}
     .sub_abs > h5{padding-top: 20px;}
-    .sub_abs p{font-size: 16px;}
     .introduce h2 {
-        padding-top: 40px;
+        padding-top: 60px;
         line-height: 40px;
-        padding-bottom: 30px;
+        padding-bottom: 45px;
         font-size: 32px ;
     }
-    .introduce p{font-size: 18px ;}
+    .introduce p{font-size: 18px ; line-height: 30px;}
+    .introduce_img {
+        margin-top: 30px;
+    }
+    
+    .introduce .introd_txt > div {margin-bottom: 50px;}
+    .introd_last p {
+        margin: 80px 0;
+    }
 }
 
 /* 623px */
 @media all and (max-width:623px){
+    .sub {
+        margin: 20px 0;
+    }
+    .sub .sub_banner img{display: none;}
     .sub_abs{ position: static; transform: translate(0);}
     .sub .sub_tit p{display: none;}
     .sub_abs p{padding-bottom: 30px;}
+
     .introduce h2{padding-top: 40px; line-height: 50px;}
     .introduce h2 {
         padding-top: 40px;
@@ -73,13 +87,21 @@
         padding-bottom: 30px;
         font-size: 28px ;
     }
-    .introduce .introd_txt {display: inherit;}
+
+    .introduce .introd_txt {display: inherit; margin-top: 30px;}
     .introduce .introd_txt p{text-align: center;}
+    .introduce .introd_txt > div {
+        padding: 0 0 50px 0;
+        margin: 0;
+    }
+
+    .introd_last p {
+        margin: 50px 0;
+    }
 }
 
-/* 473px */
+/* 537px */
 @media all and (max-width:537px){
-    .sub_abs{ height: 120px;}
     .sub_abs > h5 { padding-bottom: 10px;}
     
     
